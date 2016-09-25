@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calculator View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CalculatorViewController" customModule="calcDemoLesson2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5pn-OO-Gjh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lpl-9R-8Rb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" text="ERROR" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjU-bQ-Gei">
+                                <color key="backgroundColor" red="0.53333333333333333" green="0.6588235294117647" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.20392156859999999" green="0.12549019610000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-3" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="UXc-M3-eXB">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="0.0" height="-8"/>
+                                <state key="normal" title="copy">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyS-nO-lye">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-2" height="1"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Po-C7-ctv">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="79"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-3" height="2"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="59" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiC-Wy-T8o">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-3" height="2"/>
+                                <state key="normal" title="➕">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CX-EF-EWI">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-3" height="2"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="62" verticalHuggingPriority="49" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="41" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rj8-XM-hCI">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-2" height="1"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="61" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hy8-aW-BJk">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-2" height="1"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycr-Nd-xaQ">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-3" height="2"/>
+                                <state key="normal" title="➖">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCF-G0-SSB">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-3" height="2"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="52" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yl-Vp-DbE">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-3" height="2"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="52" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUa-Cf-D1x">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-2" height="1"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRx-FA-tSW">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-3" height="2"/>
+                                <state key="normal" title="✖️">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9me-WX-Aup">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-3" height="2"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="52" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVp-rh-FO4">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-3" height="2"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="52" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6H0-sA-NaP">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="0.0" height="-2"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uo-Mx-dhj">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-3" height="2"/>
+                                <state key="normal" title="➗">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPy-Fj-N3T">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-4" height="0.0"/>
+                                <state key="normal" title="•">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbP-6m-8Qv">
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-4" height="0.0"/>
+                                <state key="normal" title="◁">
+                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="61" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzj-z9-EXd">
+                                <color key="backgroundColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="3" height="2"/>
+                                <state key="normal" title="Ы">
+                                    <color key="titleColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uA2-BV-jIV">
+                                <color key="backgroundColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="3" height="2"/>
+                                <state key="normal" title="m">
+                                    <color key="titleColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iil-Ls-QzA">
+                                <color key="backgroundColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="3" height="2"/>
+                                <state key="normal" title="L">
+                                    <color key="titleColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4K-14-uJI">
+                                <color key="backgroundColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="3" height="2"/>
+                                <state key="normal" title="O">
+                                    <color key="titleColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpP-on-lbO">
+                                <color key="backgroundColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="3" height="2"/>
+                                <state key="normal" title="Q">
+                                    <color key="titleColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6g-JV-hEb">
+                                <color key="backgroundColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="3" height="2"/>
+                                <state key="normal" title="R">
+                                    <color key="titleColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8f-tQ-esZ">
+                                <color key="backgroundColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="3" height="2"/>
+                                <state key="normal" title="U">
+                                    <color key="titleColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="│" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mm1-Ot-4O4">
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.56862745100000001" green="0.066666666669999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="contentStretch" x="0.050000000000000003" y="0.050000000000000003" width="1" height="0.90000000000000002"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="uA2-BV-jIV" secondAttribute="trailing" id="0Rf-X0-lsE"/>
+                            <constraint firstItem="JRx-FA-tSW" firstAttribute="width" secondItem="UXc-M3-eXB" secondAttribute="width" id="0sE-f6-QEk"/>
+                            <constraint firstItem="ZbP-6m-8Qv" firstAttribute="leading" secondItem="MPy-Fj-N3T" secondAttribute="trailing" constant="5" id="1ba-mU-lua"/>
+                            <constraint firstItem="zVp-rh-FO4" firstAttribute="height" secondItem="9me-WX-Aup" secondAttribute="height" id="1en-G7-Q1I"/>
+                            <constraint firstItem="6H0-sA-NaP" firstAttribute="height" secondItem="9uo-Mx-dhj" secondAttribute="height" id="1lm-q6-kvg"/>
+                            <constraint firstItem="kCF-G0-SSB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="241-6b-bJS"/>
+                            <constraint firstItem="ycr-Nd-xaQ" firstAttribute="top" secondItem="BiC-Wy-T8o" secondAttribute="bottom" constant="5" id="3Ap-Sj-5cb"/>
+                            <constraint firstItem="Lpl-9R-8Rb" firstAttribute="top" secondItem="p4K-14-uJI" secondAttribute="bottom" constant="5" id="3Wr-PV-HiM"/>
+                            <constraint firstItem="ZjU-bQ-Gei" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4Lg-5f-ZnD"/>
+                            <constraint firstItem="vzj-z9-EXd" firstAttribute="height" secondItem="9CX-EF-EWI" secondAttribute="height" id="4bA-ZX-Sv6"/>
+                            <constraint firstItem="Hy8-aW-BJk" firstAttribute="top" secondItem="8Po-C7-ctv" secondAttribute="bottom" constant="5" id="5H1-ba-6Dj"/>
+                            <constraint firstItem="9CX-EF-EWI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5Nf-jc-38g"/>
+                            <constraint firstItem="JRx-FA-tSW" firstAttribute="width" secondItem="9CX-EF-EWI" secondAttribute="width" id="6Gh-1q-tX4"/>
+                            <constraint firstItem="VUa-Cf-D1x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6PT-2a-7K8"/>
+                            <constraint firstItem="C6g-JV-hEb" firstAttribute="top" secondItem="kpP-on-lbO" secondAttribute="bottom" constant="5" id="6Uu-Vl-rHV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Iil-Ls-QzA" secondAttribute="trailing" id="6w5-XW-SQJ"/>
+                            <constraint firstItem="Hy8-aW-BJk" firstAttribute="leading" secondItem="rj8-XM-hCI" secondAttribute="trailing" constant="5" id="6yH-io-II1"/>
+                            <constraint firstItem="ZyS-nO-lye" firstAttribute="top" secondItem="ZjU-bQ-Gei" secondAttribute="bottom" constant="5" id="7ib-Qc-er0"/>
+                            <constraint firstItem="9uo-Mx-dhj" firstAttribute="top" secondItem="JRx-FA-tSW" secondAttribute="bottom" constant="5" id="7nY-EM-XYT"/>
+                            <constraint firstItem="ZjU-bQ-Gei" firstAttribute="leading" secondItem="Mm1-Ot-4O4" secondAttribute="trailing" constant="-27" id="8JP-9c-3o5"/>
+                            <constraint firstItem="vzj-z9-EXd" firstAttribute="leading" secondItem="ycr-Nd-xaQ" secondAttribute="trailing" constant="5" id="8YL-7j-Ipo"/>
+                            <constraint firstItem="p4K-14-uJI" firstAttribute="width" secondItem="UXc-M3-eXB" secondAttribute="width" id="8c2-vV-iUb"/>
+                            <constraint firstItem="uA2-BV-jIV" firstAttribute="top" secondItem="ZjU-bQ-Gei" secondAttribute="bottom" constant="5" id="9Sb-8M-bwp"/>
+                            <constraint firstItem="Lpl-9R-8Rb" firstAttribute="top" secondItem="MPy-Fj-N3T" secondAttribute="bottom" constant="5" id="9lr-PZ-oTy"/>
+                            <constraint firstItem="zVp-rh-FO4" firstAttribute="width" secondItem="3Yl-Vp-DbE" secondAttribute="width" id="BEC-gO-nhc"/>
+                            <constraint firstItem="p4K-14-uJI" firstAttribute="leading" secondItem="d8f-tQ-esZ" secondAttribute="trailing" constant="5" id="Bhi-sZ-WS3"/>
+                            <constraint firstItem="Iil-Ls-QzA" firstAttribute="width" secondItem="VUa-Cf-D1x" secondAttribute="width" id="DE6-ao-cwk"/>
+                            <constraint firstItem="9me-WX-Aup" firstAttribute="height" secondItem="ZjU-bQ-Gei" secondAttribute="height" id="DEV-X4-UII"/>
+                            <constraint firstItem="9uo-Mx-dhj" firstAttribute="width" secondItem="9me-WX-Aup" secondAttribute="width" id="DKB-ja-zNo"/>
+                            <constraint firstItem="ZyS-nO-lye" firstAttribute="width" secondItem="UXc-M3-eXB" secondAttribute="width" id="EIw-pO-6o9"/>
+                            <constraint firstItem="Mm1-Ot-4O4" firstAttribute="centerY" secondItem="ZjU-bQ-Gei" secondAttribute="centerY" id="ERX-gQ-hwc"/>
+                            <constraint firstItem="BiC-Wy-T8o" firstAttribute="height" secondItem="UXc-M3-eXB" secondAttribute="height" id="EXx-ZT-DqJ"/>
+                            <constraint firstItem="VUa-Cf-D1x" firstAttribute="height" secondItem="ZyS-nO-lye" secondAttribute="height" id="En5-cE-WWw"/>
+                            <constraint firstItem="kCF-G0-SSB" firstAttribute="top" secondItem="9CX-EF-EWI" secondAttribute="bottom" constant="5" id="F4N-GX-AhF"/>
+                            <constraint firstItem="uA2-BV-jIV" firstAttribute="height" secondItem="UXc-M3-eXB" secondAttribute="height" id="FQ4-sM-cpY"/>
+                            <constraint firstItem="ycr-Nd-xaQ" firstAttribute="width" secondItem="9CX-EF-EWI" secondAttribute="width" id="FQz-F1-TVG"/>
+                            <constraint firstItem="kCF-G0-SSB" firstAttribute="width" secondItem="UXc-M3-eXB" secondAttribute="width" id="FUZ-3f-YqH"/>
+                            <constraint firstItem="8Po-C7-ctv" firstAttribute="leading" secondItem="ZyS-nO-lye" secondAttribute="trailing" constant="5" id="FmL-FT-hx6"/>
+                            <constraint firstItem="Lpl-9R-8Rb" firstAttribute="top" secondItem="ZbP-6m-8Qv" secondAttribute="bottom" constant="5" id="Fnd-zO-76T"/>
+                            <constraint firstItem="C6g-JV-hEb" firstAttribute="width" secondItem="9me-WX-Aup" secondAttribute="width" id="Fwz-Q8-bEK"/>
+                            <constraint firstItem="UXc-M3-eXB" firstAttribute="height" secondItem="ZjU-bQ-Gei" secondAttribute="height" id="GeI-2N-1pC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C6g-JV-hEb" secondAttribute="trailing" id="GiH-GC-TL6"/>
+                            <constraint firstItem="Lpl-9R-8Rb" firstAttribute="top" secondItem="Iil-Ls-QzA" secondAttribute="bottom" constant="5" id="Gn2-hh-mE3"/>
+                            <constraint firstItem="ZbP-6m-8Qv" firstAttribute="height" secondItem="ZyS-nO-lye" secondAttribute="height" id="Gob-bu-aPr"/>
+                            <constraint firstItem="VUa-Cf-D1x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Guk-yl-fnm"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="MPy-Fj-N3T" secondAttribute="leading" id="H0T-2D-czS"/>
+                            <constraint firstItem="BiC-Wy-T8o" firstAttribute="top" secondItem="ZjU-bQ-Gei" secondAttribute="bottom" constant="5" id="HST-zz-0fc"/>
+                            <constraint firstItem="8Po-C7-ctv" firstAttribute="height" secondItem="UXc-M3-eXB" secondAttribute="height" id="IJn-Ox-etN"/>
+                            <constraint firstItem="ZbP-6m-8Qv" firstAttribute="top" secondItem="zVp-rh-FO4" secondAttribute="bottom" constant="5" id="Isv-xr-yIp"/>
+                            <constraint firstItem="ZyS-nO-lye" firstAttribute="leading" secondItem="UXc-M3-eXB" secondAttribute="trailing" constant="5" id="JQu-qQ-3mx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vzj-z9-EXd" secondAttribute="trailing" id="JkD-Lr-VtU"/>
+                            <constraint firstItem="9uo-Mx-dhj" firstAttribute="leading" secondItem="6H0-sA-NaP" secondAttribute="trailing" constant="5" id="KqR-ri-YKJ"/>
+                            <constraint firstItem="rj8-XM-hCI" firstAttribute="width" secondItem="9CX-EF-EWI" secondAttribute="width" id="LXa-SO-T4Q"/>
+                            <constraint firstItem="kCF-G0-SSB" firstAttribute="height" secondItem="ZjU-bQ-Gei" secondAttribute="height" id="Lgz-f8-JsT"/>
+                            <constraint firstItem="p4K-14-uJI" firstAttribute="height" secondItem="ZyS-nO-lye" secondAttribute="height" id="M1I-sc-R5m"/>
+                            <constraint firstItem="MPy-Fj-N3T" firstAttribute="top" secondItem="9me-WX-Aup" secondAttribute="bottom" constant="5" id="MJJ-nc-obe"/>
+                            <constraint firstItem="ZjU-bQ-Gei" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Msg-ge-eUW"/>
+                            <constraint firstItem="ycr-Nd-xaQ" firstAttribute="height" secondItem="ZyS-nO-lye" secondAttribute="height" id="N65-Mh-yQS"/>
+                            <constraint firstItem="Hy8-aW-BJk" firstAttribute="width" secondItem="9CX-EF-EWI" secondAttribute="width" id="NYe-Ab-D0V"/>
+                            <constraint firstItem="9me-WX-Aup" firstAttribute="top" secondItem="kCF-G0-SSB" secondAttribute="bottom" constant="5" id="NZc-L6-xEG"/>
+                            <constraint firstItem="Hy8-aW-BJk" firstAttribute="height" secondItem="9CX-EF-EWI" secondAttribute="height" id="NpF-TO-nie"/>
+                            <constraint firstItem="kpP-on-lbO" firstAttribute="leading" secondItem="JRx-FA-tSW" secondAttribute="trailing" constant="5" id="PEK-Mv-kDP"/>
+                            <constraint firstItem="JRx-FA-tSW" firstAttribute="height" secondItem="ZyS-nO-lye" secondAttribute="height" id="Qvu-0i-z0R"/>
+                            <constraint firstItem="C6g-JV-hEb" firstAttribute="leading" secondItem="9uo-Mx-dhj" secondAttribute="trailing" constant="5" id="R71-6a-aeE"/>
+                            <constraint firstItem="vzj-z9-EXd" firstAttribute="height" secondItem="ZyS-nO-lye" secondAttribute="height" id="SEJ-Mq-lra"/>
+                            <constraint firstItem="kpP-on-lbO" firstAttribute="top" secondItem="vzj-z9-EXd" secondAttribute="bottom" constant="5" id="SKF-31-hGJ"/>
+                            <constraint firstItem="kpP-on-lbO" firstAttribute="height" secondItem="3Yl-Vp-DbE" secondAttribute="height" id="TTC-bV-FPN"/>
+                            <constraint firstItem="kCF-G0-SSB" firstAttribute="top" secondItem="9CX-EF-EWI" secondAttribute="bottom" constant="5" id="Tqy-ni-HjG"/>
+                            <constraint firstItem="6H0-sA-NaP" firstAttribute="width" secondItem="VUa-Cf-D1x" secondAttribute="width" id="VeE-EL-UtA"/>
+                            <constraint firstItem="VUa-Cf-D1x" firstAttribute="top" secondItem="Hy8-aW-BJk" secondAttribute="bottom" constant="5" id="VkZ-j2-YH2"/>
+                            <constraint firstItem="ZbP-6m-8Qv" firstAttribute="width" secondItem="UXc-M3-eXB" secondAttribute="width" id="Vtw-1a-JuN"/>
+                            <constraint firstItem="d8f-tQ-esZ" firstAttribute="height" secondItem="ZbP-6m-8Qv" secondAttribute="height" id="W1s-ET-I0U"/>
+                            <constraint firstItem="9me-WX-Aup" firstAttribute="width" secondItem="UXc-M3-eXB" secondAttribute="width" id="W7x-52-VZa"/>
+                            <constraint firstItem="ycr-Nd-xaQ" firstAttribute="leading" secondItem="Hy8-aW-BJk" secondAttribute="trailing" constant="5" id="XF3-Ee-iOJ"/>
+                            <constraint firstItem="uA2-BV-jIV" firstAttribute="leading" secondItem="BiC-Wy-T8o" secondAttribute="trailing" constant="5" id="Xcv-p1-d0n"/>
+                            <constraint firstItem="6H0-sA-NaP" firstAttribute="top" secondItem="VUa-Cf-D1x" secondAttribute="bottom" constant="5" id="YMP-EN-Lug"/>
+                            <constraint firstItem="rj8-XM-hCI" firstAttribute="leading" secondItem="9CX-EF-EWI" secondAttribute="trailing" constant="5" id="Ygw-TU-5Cy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kpP-on-lbO" secondAttribute="trailing" id="YxV-ag-go8"/>
+                            <constraint firstItem="uA2-BV-jIV" firstAttribute="width" secondItem="UXc-M3-eXB" secondAttribute="width" id="Z2L-0M-hdC"/>
+                            <constraint firstItem="C6g-JV-hEb" firstAttribute="height" secondItem="ZyS-nO-lye" secondAttribute="height" id="ZSq-wL-W7Z"/>
+                            <constraint firstItem="ZjU-bQ-Gei" firstAttribute="top" secondItem="5pn-OO-Gjh" secondAttribute="bottom" constant="5" id="bIU-Tx-gEa"/>
+                            <constraint firstItem="zVp-rh-FO4" firstAttribute="top" secondItem="3Yl-Vp-DbE" secondAttribute="bottom" constant="5" id="bUc-nt-pAH"/>
+                            <constraint firstItem="BiC-Wy-T8o" firstAttribute="leading" secondItem="8Po-C7-ctv" secondAttribute="trailing" constant="5" id="beA-D5-E7r"/>
+                            <constraint firstItem="VUa-Cf-D1x" firstAttribute="leading" secondItem="3Yl-Vp-DbE" secondAttribute="trailing" constant="5" id="cva-F1-sHk"/>
+                            <constraint firstItem="vzj-z9-EXd" firstAttribute="width" secondItem="9CX-EF-EWI" secondAttribute="width" id="dUf-9M-BTE"/>
+                            <constraint firstItem="VUa-Cf-D1x" firstAttribute="height" secondItem="3Yl-Vp-DbE" secondAttribute="height" id="dhd-jo-eZY"/>
+                            <constraint firstItem="Iil-Ls-QzA" firstAttribute="top" secondItem="C6g-JV-hEb" secondAttribute="bottom" constant="5" id="dmt-l1-5pq"/>
+                            <constraint firstItem="ZjU-bQ-Gei" firstAttribute="top" secondItem="5pn-OO-Gjh" secondAttribute="bottom" constant="5" id="eTy-aj-xCy"/>
+                            <constraint firstItem="UXc-M3-eXB" firstAttribute="top" secondItem="ZjU-bQ-Gei" secondAttribute="bottom" constant="5" id="f8P-92-uvA"/>
+                            <constraint firstItem="Iil-Ls-QzA" firstAttribute="leading" secondItem="p4K-14-uJI" secondAttribute="trailing" constant="5" id="fSx-y8-EBb"/>
+                            <constraint firstItem="vzj-z9-EXd" firstAttribute="top" secondItem="uA2-BV-jIV" secondAttribute="bottom" constant="5" id="fW4-4l-iyQ"/>
+                            <constraint firstItem="rj8-XM-hCI" firstAttribute="top" secondItem="ZyS-nO-lye" secondAttribute="bottom" constant="5" id="gtT-No-Ez0"/>
+                            <constraint firstItem="C6g-JV-hEb" firstAttribute="width" secondItem="UXc-M3-eXB" secondAttribute="width" id="h7n-00-EI5"/>
+                            <constraint firstItem="9uo-Mx-dhj" firstAttribute="height" secondItem="ZyS-nO-lye" secondAttribute="height" id="hSA-sS-48V"/>
+                            <constraint firstItem="vzj-z9-EXd" firstAttribute="height" secondItem="VUa-Cf-D1x" secondAttribute="height" id="haY-OG-SQI"/>
+                            <constraint firstItem="MPy-Fj-N3T" firstAttribute="height" secondItem="ZjU-bQ-Gei" secondAttribute="height" id="hcS-z7-2RM"/>
+                            <constraint firstItem="8Po-C7-ctv" firstAttribute="width" secondItem="UXc-M3-eXB" secondAttribute="width" id="hfJ-QZ-Afd"/>
+                            <constraint firstItem="zVp-rh-FO4" firstAttribute="leading" secondItem="9me-WX-Aup" secondAttribute="trailing" constant="5" id="iwp-Xh-8sB"/>
+                            <constraint firstItem="uA2-BV-jIV" firstAttribute="height" secondItem="UXc-M3-eXB" secondAttribute="height" id="n61-QT-0Nn"/>
+                            <constraint firstItem="ZjU-bQ-Gei" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nVu-Wb-YlA"/>
+                            <constraint firstItem="9CX-EF-EWI" firstAttribute="top" secondItem="UXc-M3-eXB" secondAttribute="bottom" constant="5" id="o4s-Ul-Mhp"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9me-WX-Aup" secondAttribute="leading" id="orw-vv-Kk1"/>
+                            <constraint firstItem="8Po-C7-ctv" firstAttribute="height" secondItem="UXc-M3-eXB" secondAttribute="height" id="pVk-QU-Wbw"/>
+                            <constraint firstItem="BiC-Wy-T8o" firstAttribute="height" secondItem="VUa-Cf-D1x" secondAttribute="height" id="q7Q-1U-d44"/>
+                            <constraint firstItem="3Yl-Vp-DbE" firstAttribute="leading" secondItem="kCF-G0-SSB" secondAttribute="trailing" constant="5" id="r3N-vD-Dvx"/>
+                            <constraint firstItem="Iil-Ls-QzA" firstAttribute="height" secondItem="VUa-Cf-D1x" secondAttribute="height" id="rxA-Yu-RRd"/>
+                            <constraint firstItem="9CX-EF-EWI" firstAttribute="height" secondItem="ZjU-bQ-Gei" secondAttribute="height" id="sYV-Tn-s9r"/>
+                            <constraint firstItem="JRx-FA-tSW" firstAttribute="height" secondItem="3Yl-Vp-DbE" secondAttribute="height" id="tJs-Ie-iJo"/>
+                            <constraint firstItem="3Yl-Vp-DbE" firstAttribute="top" secondItem="rj8-XM-hCI" secondAttribute="bottom" constant="5" id="tbT-sb-wcR"/>
+                            <constraint firstItem="ycr-Nd-xaQ" firstAttribute="height" secondItem="9CX-EF-EWI" secondAttribute="height" id="ton-Ee-nYb"/>
+                            <constraint firstItem="JRx-FA-tSW" firstAttribute="leading" secondItem="VUa-Cf-D1x" secondAttribute="trailing" constant="5" id="uFp-q0-hx1"/>
+                            <constraint firstItem="UXc-M3-eXB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="v3C-fw-UYY"/>
+                            <constraint firstItem="d8f-tQ-esZ" firstAttribute="leading" secondItem="ZbP-6m-8Qv" secondAttribute="trailing" constant="5" id="vOu-Rc-cuh"/>
+                            <constraint firstItem="9uo-Mx-dhj" firstAttribute="width" secondItem="UXc-M3-eXB" secondAttribute="width" id="vVy-Ty-k8l"/>
+                            <constraint firstItem="rj8-XM-hCI" firstAttribute="height" secondItem="9CX-EF-EWI" secondAttribute="height" id="w3n-CS-9Pp"/>
+                            <constraint firstItem="ZjU-bQ-Gei" firstAttribute="top" secondItem="5pn-OO-Gjh" secondAttribute="bottom" constant="5" id="wH0-7k-Goj"/>
+                            <constraint firstItem="BiC-Wy-T8o" firstAttribute="width" secondItem="UXc-M3-eXB" secondAttribute="width" id="wTe-n4-VXd"/>
+                            <constraint firstItem="VUa-Cf-D1x" firstAttribute="width" secondItem="9CX-EF-EWI" secondAttribute="width" id="ygp-cT-QAe"/>
+                            <constraint firstItem="p4K-14-uJI" firstAttribute="top" secondItem="9uo-Mx-dhj" secondAttribute="bottom" constant="5" id="yz5-A7-RbG"/>
+                            <constraint firstItem="ZyS-nO-lye" firstAttribute="height" secondItem="UXc-M3-eXB" secondAttribute="height" id="zH3-UA-9u2"/>
+                            <constraint firstItem="Lpl-9R-8Rb" firstAttribute="top" secondItem="d8f-tQ-esZ" secondAttribute="bottom" constant="5" id="zrL-Il-Sgw"/>
+                            <constraint firstItem="8Po-C7-ctv" firstAttribute="top" secondItem="ZjU-bQ-Gei" secondAttribute="bottom" constant="5" id="zsJ-0n-NZL"/>
+                            <constraint firstItem="MPy-Fj-N3T" firstAttribute="width" secondItem="UXc-M3-eXB" secondAttribute="width" id="zx9-pn-YYf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="-166"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
