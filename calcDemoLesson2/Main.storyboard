@@ -16,202 +16,244 @@
                         <viewControllerLayoutGuide type="bottom" id="Lpl-9R-8Rb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" text="ERROR" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjU-bQ-Gei">
-                                <color key="backgroundColor" red="0.53333333333333333" green="0.6588235294117647" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="0.20392156859999999" green="0.12549019610000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
+                                <color key="textColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="-3" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="UXc-M3-eXB">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="0.0" height="-8"/>
                                 <state key="normal" title="copy">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyS-nO-lye">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="titleShadowOffset" width="-2" height="1"/>
-                                <state key="normal" title="0">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <connections>
+                                    <action selector="copyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oaL-gN-HLM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Po-C7-ctv">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="79"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="-3" height="2"/>
                                 <state key="normal" title="=">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="59" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiC-Wy-T8o">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="49"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="-3" height="2"/>
-                                <state key="normal" title="➕">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hp5-2f-hsQ"/>
+                                    <action selector="plusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KOK-Nv-kjR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycr-Nd-xaQ">
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-3" height="2"/>
+                                <state key="normal" title="⎯">
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="minusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JDd-yX-Lxf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRx-FA-tSW">
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-3" height="2"/>
+                                <state key="normal" title="✖︎">
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="multiplyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dTh-WR-cqH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uo-Mx-dhj">
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-3" height="2"/>
+                                <state key="normal" title="⁒">
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="divideButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zrL-9e-HqV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyS-nO-lye">
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-2" height="1"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dRF-2j-s27"/>
+                                    <action selector="zero0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kpo-ro-6Tw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CX-EF-EWI">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="-3" height="2"/>
                                 <state key="normal" title="7">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AEz-a3-KoT"/>
+                                    <action selector="seven7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f18-vB-qlL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="62" verticalHuggingPriority="49" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="41" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rj8-XM-hCI">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="-2" height="1"/>
                                 <state key="normal" title="8">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LXF-vT-G5j"/>
+                                    <action selector="eight8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dzV-Vl-dbq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="61" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hy8-aW-BJk">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="-2" height="1"/>
                                 <state key="normal" title="9">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycr-Nd-xaQ">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
-                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="titleShadowOffset" width="-3" height="2"/>
-                                <state key="normal" title="➖">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <connections>
+                                    <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jKf-iI-1qd"/>
+                                    <action selector="nine9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CW5-1q-sP8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCF-G0-SSB">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="-3" height="2"/>
                                 <state key="normal" title="4">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xG4-vC-OPH"/>
+                                    <action selector="four4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jxS-gj-wFe"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="52" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yl-Vp-DbE">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="52" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yl-Vp-DbE">
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="-3" height="2"/>
                                 <state key="normal" title="5">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AoM-dd-6GP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="52" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUa-Cf-D1x">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="-2" height="1"/>
                                 <state key="normal" title="6">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRx-FA-tSW">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
-                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="titleShadowOffset" width="-3" height="2"/>
-                                <state key="normal" title="✖️">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <connections>
+                                    <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wta-Ai-KNr"/>
+                                    <action selector="six6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aIv-Up-N54"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9me-WX-Aup">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="-3" height="2"/>
                                 <state key="normal" title="1">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQV-JJ-uEF"/>
+                                    <action selector="one1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kbb-Ji-ggV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="52" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVp-rh-FO4">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="-3" height="2"/>
                                 <state key="normal" title="2">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gQs-E8-1UI"/>
+                                    <action selector="two2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="isi-P1-DLj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="52" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6H0-sA-NaP">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="0.0" height="-2"/>
                                 <state key="normal" title="3">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uo-Mx-dhj">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
-                                <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="titleShadowOffset" width="-3" height="2"/>
-                                <state key="normal" title="➗">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <connections>
+                                    <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SIF-kI-0rp"/>
+                                    <action selector="three3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ca-2M-aic"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPy-Fj-N3T">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="-4" height="0.0"/>
                                 <state key="normal" title="•">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="dotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dh5-eZ-IUv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbP-6m-8Qv">
-                                <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="-4" height="0.0"/>
-                                <state key="normal" title="◁">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.56862745098039214" green="0.066666666666666666" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="⌫">
+                                    <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="disabled">
                                     <color key="titleColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="eraseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Mp-da-0WP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="61" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzj-z9-EXd">
-                                <color key="backgroundColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="3" height="2"/>
@@ -221,7 +263,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uA2-BV-jIV">
-                                <color key="backgroundColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="3" height="2"/>
@@ -231,7 +273,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iil-Ls-QzA">
-                                <color key="backgroundColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="3" height="2"/>
@@ -241,7 +283,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4K-14-uJI">
-                                <color key="backgroundColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="3" height="2"/>
@@ -251,7 +293,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpP-on-lbO">
-                                <color key="backgroundColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="3" height="2"/>
@@ -261,7 +303,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6g-JV-hEb">
-                                <color key="backgroundColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="3" height="2"/>
@@ -271,7 +313,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8f-tQ-esZ">
-                                <color key="backgroundColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.53333333329999999" green="0.6588235294" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="3" height="2"/>
@@ -280,13 +322,8 @@
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="│" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mm1-Ot-4O4">
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.56862745100000001" green="0.066666666669999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.20784313725490194" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.39215686274509803" green="0.46274509803921571" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                         <rect key="contentStretch" x="0.050000000000000003" y="0.050000000000000003" width="1" height="0.90000000000000002"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="uA2-BV-jIV" secondAttribute="trailing" id="0Rf-X0-lsE"/>
@@ -308,7 +345,6 @@
                             <constraint firstItem="Hy8-aW-BJk" firstAttribute="leading" secondItem="rj8-XM-hCI" secondAttribute="trailing" constant="5" id="6yH-io-II1"/>
                             <constraint firstItem="ZyS-nO-lye" firstAttribute="top" secondItem="ZjU-bQ-Gei" secondAttribute="bottom" constant="5" id="7ib-Qc-er0"/>
                             <constraint firstItem="9uo-Mx-dhj" firstAttribute="top" secondItem="JRx-FA-tSW" secondAttribute="bottom" constant="5" id="7nY-EM-XYT"/>
-                            <constraint firstItem="ZjU-bQ-Gei" firstAttribute="leading" secondItem="Mm1-Ot-4O4" secondAttribute="trailing" constant="-27" id="8JP-9c-3o5"/>
                             <constraint firstItem="vzj-z9-EXd" firstAttribute="leading" secondItem="ycr-Nd-xaQ" secondAttribute="trailing" constant="5" id="8YL-7j-Ipo"/>
                             <constraint firstItem="p4K-14-uJI" firstAttribute="width" secondItem="UXc-M3-eXB" secondAttribute="width" id="8c2-vV-iUb"/>
                             <constraint firstItem="uA2-BV-jIV" firstAttribute="top" secondItem="ZjU-bQ-Gei" secondAttribute="bottom" constant="5" id="9Sb-8M-bwp"/>
@@ -319,7 +355,6 @@
                             <constraint firstItem="9me-WX-Aup" firstAttribute="height" secondItem="ZjU-bQ-Gei" secondAttribute="height" id="DEV-X4-UII"/>
                             <constraint firstItem="9uo-Mx-dhj" firstAttribute="width" secondItem="9me-WX-Aup" secondAttribute="width" id="DKB-ja-zNo"/>
                             <constraint firstItem="ZyS-nO-lye" firstAttribute="width" secondItem="UXc-M3-eXB" secondAttribute="width" id="EIw-pO-6o9"/>
-                            <constraint firstItem="Mm1-Ot-4O4" firstAttribute="centerY" secondItem="ZjU-bQ-Gei" secondAttribute="centerY" id="ERX-gQ-hwc"/>
                             <constraint firstItem="BiC-Wy-T8o" firstAttribute="height" secondItem="UXc-M3-eXB" secondAttribute="height" id="EXx-ZT-DqJ"/>
                             <constraint firstItem="VUa-Cf-D1x" firstAttribute="height" secondItem="ZyS-nO-lye" secondAttribute="height" id="En5-cE-WWw"/>
                             <constraint firstItem="kCF-G0-SSB" firstAttribute="top" secondItem="9CX-EF-EWI" secondAttribute="bottom" constant="5" id="F4N-GX-AhF"/>
@@ -414,6 +449,9 @@
                             <constraint firstItem="MPy-Fj-N3T" firstAttribute="width" secondItem="UXc-M3-eXB" secondAttribute="width" id="zx9-pn-YYf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="expressionLabel" destination="ZjU-bQ-Gei" id="zvr-Lp-OMt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -422,7 +460,7 @@
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
