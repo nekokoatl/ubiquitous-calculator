@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8D5451B51D904F3A0009DF67"
-               BuildableName = "calcDemoLesson2.app"
-               BlueprintName = "calcDemoLesson2"
-               ReferencedContainer = "container:calcDemoLesson2.xcodeproj">
+               BlueprintIdentifier = "8DEA3B781DA1B2A10018B3B3"
+               BuildableName = "Calc111111.app"
+               BlueprintName = "Calc111111"
+               ReferencedContainer = "container:Calc111111.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D5451B51D904F3A0009DF67"
-            BuildableName = "calcDemoLesson2.app"
-            BlueprintName = "calcDemoLesson2"
-            ReferencedContainer = "container:calcDemoLesson2.xcodeproj">
+            BlueprintIdentifier = "8DEA3B781DA1B2A10018B3B3"
+            BuildableName = "Calc111111.app"
+            BlueprintName = "Calc111111"
+            ReferencedContainer = "container:Calc111111.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D5451B51D904F3A0009DF67"
-            BuildableName = "calcDemoLesson2.app"
-            BlueprintName = "calcDemoLesson2"
-            ReferencedContainer = "container:calcDemoLesson2.xcodeproj">
+            BlueprintIdentifier = "8DEA3B781DA1B2A10018B3B3"
+            BuildableName = "Calc111111.app"
+            BlueprintName = "Calc111111"
+            ReferencedContainer = "container:Calc111111.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D5451B51D904F3A0009DF67"
-            BuildableName = "calcDemoLesson2.app"
-            BlueprintName = "calcDemoLesson2"
-            ReferencedContainer = "container:calcDemoLesson2.xcodeproj">
+            BlueprintIdentifier = "8DEA3B781DA1B2A10018B3B3"
+            BuildableName = "Calc111111.app"
+            BlueprintName = "Calc111111"
+            ReferencedContainer = "container:Calc111111.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
