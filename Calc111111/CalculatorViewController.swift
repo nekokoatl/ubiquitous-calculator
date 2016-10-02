@@ -13,7 +13,13 @@ class CalculatorViewController: UIViewController {
 //    @IBAction func resultButton(_ sender: UIButton) {
 //        setDefaultExpression(value: "0")
 //    }
-//    
+    
+    let bgColour1 = UIColor(red:0.39, green:0.46, blue:0.47, alpha:1.00)
+    let bgColour2 =  UIColor(red:0.62, green:0.74, blue:0.75, alpha:1.00)
+    let bgColour3 = UIColor(red:0.84, green:0.98, blue:1.00, alpha:1.00)
+    let lightColour = UIColor(red:0.35, green:0.85, blue:0.90, alpha:1.00)
+    let darkColour = UIColor(red:0.18, green:0.22, blue:0.22, alpha:1.00)
+    
     @IBAction func one1(_ sender: UIButton) {
     }
     @IBAction func zero0(_ sender: UIButton) {
@@ -51,12 +57,11 @@ class CalculatorViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        //запускается раньше всего
+//запускается раньше всего
         super.viewDidLoad()
+// setDefaultExpression(value: "Error ")
         
-  //      setDefaultExpression(value: "Error ")
-        
-        //анимация
+//анимация
         UIView.animate(withDuration: 12, delay: 0.0, options:[UIViewAnimationOptions.repeat, UIViewAnimationOptions.autoreverse], animations: {
             self.view.backgroundColor = self.bgColour1
             self.view.backgroundColor = self.bgColour2
@@ -64,8 +69,7 @@ class CalculatorViewController: UIViewController {
             self.view.backgroundColor = self.bgColour2
             self.view.backgroundColor = self.bgColour1
             }, completion: nil)
-        
-    }
+        }
     
 
     @IBAction func addNumber (_ sender: UIButton) {
@@ -80,18 +84,36 @@ class CalculatorViewController: UIViewController {
     }
     
     
-    let bgColour1 = UIColor(red:0.39, green:0.46, blue:0.47, alpha:1.00)
-    let bgColour2 =  UIColor(red:0.62, green:0.74, blue:0.75, alpha:1.00)
-    let bgColour3 = UIColor(red:0.84, green:0.98, blue:1.00, alpha:1.00)
-    let lightColour = UIColor(red:0.35, green:0.85, blue:0.90, alpha:1.00)
-    let darkColour = UIColor(red:0.18, green:0.22, blue:0.22, alpha:1.00)
     
     var calculatorMemory = Array<Int>()
+    var sum: Int = 0
 
-    @IBAction func actionButtons() {
+
+    @IBAction func plusAction(_ sender: UIButton) {
+     
+        if calculatorMemory.count == 0 {
+            calculatorMemory.append(displayValue)
+            expressionLabel.text = " "
+
+ //           expressionLabel.text = expressionLabel.text! + numberOnButton
+        }
+        else {
+            calculatorMemory.append(displayValue)
+            sum  = calculatorMemory.reduce(0, +)
+            expressionLabel.text = "\(sum)"
+
+ //           var sum: Int = calculatorMemory.reduce(0, +)
+ //           expressionLabel.text = numberOnButton
+        }
+
         userIsTyping = false
-        calculatorMemory.append(displayValue)
+
     }
+    
+//    @IBAction func actionButtons() {
+//        userIsTyping = false
+//        calculatorMemory.append(displayValue)
+//    }
     
     var displayValue: Int {
         get {
@@ -112,6 +134,8 @@ class CalculatorViewController: UIViewController {
         case "⁒" : countIt { $0 / $1 }
         case "⎯" : countIt { $0 - $1 }
         case "+" : countIt { $0 + $1 }
+        case "=" : countIt { $0 + $1 }
+
   //      case "copy" : countIt { $0 + $1 }
 
         default: break
@@ -121,7 +145,9 @@ class CalculatorViewController: UIViewController {
     func countIt(_ operation: (Int, Int) -> Int) {
         if calculatorMemory.count >= 2 {
             displayValue = operation(calculatorMemory.removeLast(),calculatorMemory.removeLast())
-            actionButtons()
+            print("calc memory = \(calculatorMemory)")
+
+          //  actionButtons()
         }
     }
 

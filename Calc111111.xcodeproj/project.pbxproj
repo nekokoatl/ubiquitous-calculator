@@ -59,10 +59,10 @@
 				8DEA3B8F1DA1B3150018B3B3 /* AppDelegate.swift */,
 				8DEA3B901DA1B3150018B3B3 /* CalculatorViewController.swift */,
 				8DEA3B911DA1B3150018B3B3 /* Info.plist */,
-				8DEA3B921DA1B3150018B3B3 /* LaunchScreen.storyboard */,
 				8DEA3B931DA1B3150018B3B3 /* Main.storyboard */,
 				8DEA3B941DA1B3150018B3B3 /* Media.xcassets */,
 				8DEA3B8E1DA1B3140018B3B3 /* Calc111111-Bridging-Header.h */,
+				8DEA3B921DA1B3150018B3B3 /* LaunchScreen.storyboard */,
 			);
 			path = Calc111111;
 			sourceTree = "<group>";
@@ -288,6 +288,7 @@
 				8DEA3B8D1DA1B2A10018B3B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

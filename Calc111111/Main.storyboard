@@ -10,13 +10,13 @@
         <!--Calculator View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CalculatorViewController" customModule="calcDemoLesson2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CalculatorViewController" customModule="Calc111111" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5pn-OO-Gjh"/>
                         <viewControllerLayoutGuide type="bottom" id="Lpl-9R-8Rb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="60" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" text="ERROR" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjU-bQ-Gei">
@@ -46,6 +46,9 @@
                                 <state key="normal" title="=">
                                     <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4AL-It-jEx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="59" verticalHuggingPriority="50" horizontalCompressionResistancePriority="40" verticalCompressionResistancePriority="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiC-Wy-T8o">
                                 <color key="backgroundColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -56,7 +59,7 @@
                                     <color key="titleColor" red="0.34901960784313724" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hp5-2f-hsQ"/>
+                                    <action selector="plusAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CmA-DF-feV"/>
                                     <action selector="plusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KOK-Nv-kjR"/>
                                 </connections>
                             </button>
@@ -461,6 +464,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
 </document>
